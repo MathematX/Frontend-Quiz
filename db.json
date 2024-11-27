@@ -1,0 +1,1766 @@
+{
+  "Linux": [
+    {
+      "id": 1,
+      "question": "What is the Linux Kernel?",
+      "answer": "The Linux kernel is the core of the Linux operating system that manages system resources and hardware communication."
+    },
+    {
+      "id": 2,
+      "question": "Explain the difference between Linux and Unix.",
+      "answer": "Linux is an open-source operating system modeled on Unix but independently developed. Unix is a proprietary OS used in enterprise environments."
+    },
+    {
+      "id": 3,
+      "question": "What are file permissions in Linux?",
+      "answer": "File permissions in Linux determine access control, represented as `r` (read), `w` (write), and `x` (execute) for the owner, group, and others."
+    },
+    {
+      "id": 4,
+      "question": "How do you check the current directory in Linux?",
+      "answer": "Use the `pwd` (print working directory) command."
+    },
+    {
+      "id": 5,
+      "question": "What command is used to list files in a directory?",
+      "answer": "The `ls` command."
+    },
+    {
+      "id": 6,
+      "question": "How do you copy files in Linux?",
+      "answer": "Use the `cp` command. For example: `cp source_file destination_file`."
+    },
+    {
+      "id": 7,
+      "question": "How do you create a new directory in Linux?",
+      "answer": "Use the `mkdir` command. For example: `mkdir new_directory`."
+    },
+    {
+      "id": 8,
+      "question": "How do you remove a directory in Linux?",
+      "answer": "Use the `rmdir` command for empty directories or `rm -r` for non-empty ones."
+    },
+    {
+      "id": 9,
+      "question": "What is a symbolic link in Linux?",
+      "answer": "A symbolic link is a reference to another file or directory, created using the `ln -s` command."
+    },
+    {
+      "id": 10,
+      "question": "What does the `chmod` command do?",
+      "answer": "It changes the file permissions. For example, `chmod 755 filename`."
+    },
+    {
+      "id": 11,
+      "question": "What does the `ps` command do?",
+      "answer": "It displays information about active processes."
+    },
+    {
+      "id": 12,
+      "question": "How can you search for a specific string in files?",
+      "answer": "Use the `grep` command. For example: `grep 'string' filename`."
+    },
+    {
+      "id": 13,
+      "question": "How do you check disk usage in Linux?",
+      "answer": "Use the `du` command for specific files or directories and `df` for overall disk space."
+    },
+    {
+      "id": 14,
+      "question": "How do you change file ownership in Linux?",
+      "answer": "Use the `chown` command. For example: `chown user:group filename`."
+    },
+    {
+      "id": 15,
+      "question": "What does the `top` command do?",
+      "answer": "It shows real-time information about system processes and resource usage."
+    },
+    {
+      "id": 16,
+      "question": "How do you compress files in Linux?",
+      "answer": "Use tools like `gzip`, `bzip2`, or `tar`. Example: `tar -czvf archive.tar.gz file`."
+    },
+    {
+      "id": 17,
+      "question": "What is the `cron` utility?",
+      "answer": "`cron` is used to schedule repetitive tasks in Linux."
+    },
+    {
+      "id": 18,
+      "question": "How do you view the contents of a file in Linux?",
+      "answer": "Use commands like `cat`, `less`, `more`, or `tail`."
+    },
+    {
+      "id": 19,
+      "question": "How do you terminate a process in Linux?",
+      "answer": "Use the `kill` command followed by the process ID (PID). Example: `kill 1234`."
+    },
+    {
+      "id": 20,
+      "question": "What is the difference between `hard link` and `soft link`?",
+      "answer": "A hard link points directly to the file's inode, while a soft link (symbolic link) points to the file name."
+    }
+  ],
+  "Git": [
+    {
+      "id": 1,
+      "question": "What is Git?",
+      "answer": "Git is a distributed version control system that tracks changes in source code during software development."
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between Git and GitHub?",
+      "answer": "Git is a version control system, while GitHub is a cloud-based hosting service for Git repositories."
+    },
+    {
+      "id": 3,
+      "question": "How do you initialize a Git repository?",
+      "answer": "Use the `git init` command in the project directory."
+    },
+    {
+      "id": 4,
+      "question": "How do you clone a repository?",
+      "answer": "Use the `git clone <repository_url>` command."
+    },
+    {
+      "id": 5,
+      "question": "What is a commit in Git?",
+      "answer": "A commit is a snapshot of the project's current changes, created using `git commit`."
+    },
+    {
+      "id": 6,
+      "question": "How do you check the status of a repository?",
+      "answer": "Use the `git status` command."
+    },
+    {
+      "id": 7,
+      "question": "What is a branch in Git?",
+      "answer": "A branch is a pointer to a specific commit in a Git repository, used for parallel development."
+    },
+    {
+      "id": 8,
+      "question": "How do you create a new branch?",
+      "answer": "Use the `git branch <branch_name>` command."
+    },
+    {
+      "id": 9,
+      "question": "How do you switch to a different branch?",
+      "answer": "Use the `git checkout <branch_name>` or `git switch <branch_name>` command."
+    },
+    {
+      "id": 10,
+      "question": "How do you merge branches in Git?",
+      "answer": "Use the `git merge <branch_name>` command to merge a branch into the current branch."
+    },
+    {
+      "id": 11,
+      "question": "What is the purpose of `git pull`?",
+      "answer": "The `git pull` command fetches updates from a remote repository and merges them into the local branch."
+    },
+    {
+      "id": 12,
+      "question": "How do you push changes to a remote repository?",
+      "answer": "Use the `git push` command."
+    },
+    {
+      "id": 13,
+      "question": "What is a conflict in Git?",
+      "answer": "A conflict occurs when changes in two branches or commits cannot be automatically merged."
+    },
+    {
+      "id": 14,
+      "question": "How do you resolve merge conflicts?",
+      "answer": "Resolve conflicts by manually editing the affected files, staging the changes, and committing them."
+    },
+    {
+      "id": 15,
+      "question": "What is the difference between `git fetch` and `git pull`?",
+      "answer": "`git fetch` downloads changes from the remote repository without merging, while `git pull` downloads and merges changes."
+    },
+    {
+      "id": 16,
+      "question": "How do you view the commit history?",
+      "answer": "Use the `git log` command."
+    },
+    {
+      "id": 17,
+      "question": "How do you undo a commit?",
+      "answer": "Use `git revert <commit_hash>` to create a new commit that undoes the changes or `git reset` to remove commits."
+    },
+    {
+      "id": 18,
+      "question": "What is `git stash`?",
+      "answer": "`git stash` temporarily saves changes that are not ready to be committed."
+    },
+    {
+      "id": 19,
+      "question": "How do you apply stashed changes?",
+      "answer": "Use the `git stash apply` command."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of `.gitignore`?",
+      "answer": "The `.gitignore` file specifies files and directories that should be ignored by Git."
+    }
+  ],
+  "HTML": [
+    {
+      "id": 1,
+      "question": "What is HTML?",
+      "answer": "HTML (HyperText Markup Language) is the standard markup language used to create web pages."
+    },
+    {
+      "id": 2,
+      "question": "What are HTML tags?",
+      "answer": "HTML tags are the building blocks of HTML used to define elements within a web page."
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between HTML and XHTML?",
+      "answer": "XHTML is a stricter and more XML-based version of HTML."
+    },
+    {
+      "id": 4,
+      "question": "What is a semantic HTML tag?",
+      "answer": "Semantic tags clearly describe their meaning in a human- and machine-readable way, such as `<header>`, `<footer>`, and `<article>`."
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of the `<!DOCTYPE>` declaration?",
+      "answer": "It specifies the HTML version and type of document, ensuring proper rendering by the browser."
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between `<div>` and `<span>`?",
+      "answer": "`<div>` is a block-level element used for grouping, while `<span>` is an inline element used for styling small parts of text."
+    },
+    {
+      "id": 7,
+      "question": "What are void elements in HTML?",
+      "answer": "Void elements do not have closing tags, such as `<img>`, `<input>`, and `<br>`."
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the `<meta>` tag?",
+      "answer": "It provides metadata about the HTML document, such as charset, viewport settings, and descriptions."
+    },
+    {
+      "id": 9,
+      "question": "What is the difference between `<strong>` and `<b>`?",
+      "answer": "`<strong>` is used for strong importance (semantic), while `<b>` only bolds the text (non-semantic)."
+    },
+    {
+      "id": 10,
+      "question": "How do you create a hyperlink in HTML?",
+      "answer": "Use the `<a>` tag with the `href` attribute. Example: `<a href=\"https://example.com\">Link</a>`."
+    },
+    {
+      "id": 11,
+      "question": "What is the purpose of the `<form>` tag?",
+      "answer": "It is used to create an HTML form for user input."
+    },
+    {
+      "id": 12,
+      "question": "What is the difference between `id` and `class` attributes?",
+      "answer": "`id` is unique and used for a single element, while `class` can be shared among multiple elements."
+    },
+    {
+      "id": 13,
+      "question": "How do you include an image in HTML?",
+      "answer": "Use the `<img>` tag with the `src` attribute. Example: `<img src=\"image.jpg\" alt=\"Description\">`."
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of the `alt` attribute in the `<img>` tag?",
+      "answer": "It provides alternative text for images, improving accessibility and SEO."
+    },
+    {
+      "id": 15,
+      "question": "What is the `<table>` tag used for?",
+      "answer": "It is used to create a table in HTML."
+    },
+    {
+      "id": 16,
+      "question": "How do you create an ordered and unordered list in HTML?",
+      "answer": "Use `<ol>` for ordered lists and `<ul>` for unordered lists, with `<li>` for list items."
+    },
+    {
+      "id": 17,
+      "question": "What are HTML attributes?",
+      "answer": "Attributes provide additional information about an element, such as `href`, `src`, `class`, and `id`."
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between `<script>` and `<noscript>` tags?",
+      "answer": "`<script>` is for JavaScript code, while `<noscript>` provides alternative content if JavaScript is disabled."
+    },
+    {
+      "id": 19,
+      "question": "What is the `<iframe>` tag used for?",
+      "answer": "It is used to embed another HTML page within the current page."
+    },
+    {
+      "id": 20,
+      "question": "What is the difference between `<section>` and `<article>`?",
+      "answer": "`<section>` is for grouping related content, while `<article>` is for self-contained content."
+    },
+    {
+      "id": 21,
+      "question": "How do you specify the character encoding for an HTML document?",
+      "answer": "Use the `<meta charset=\"UTF-8\">` tag in the `<head>` section."
+    },
+    {
+      "id": 22,
+      "question": "What is the difference between `<em>` and `<i>`?",
+      "answer": "`<em>` is used for emphasis (semantic), while `<i>` only italicizes text (non-semantic)."
+    },
+    {
+      "id": 23,
+      "question": "What are inline, block-level, and inline-block elements?",
+      "answer": "Inline: Takes up only as much width as necessary. Example: `<span>`.\nBlock-level: Takes up the full width available. Example: `<div>`.\nInline-block: Behaves like an inline element but allows block-level properties."
+    },
+    {
+      "id": 24,
+      "question": "How do you add a comment in HTML?",
+      "answer": "Use `<!-- comment -->`."
+    },
+    {
+      "id": 25,
+      "question": "What is the `<head>` tag used for?",
+      "answer": "It contains meta-information about the document, such as title, styles, and links to external resources."
+    },
+    {
+      "id": 26,
+      "question": "How do you define a heading in HTML?",
+      "answer": "Use `<h1>` to `<h6>` tags for headings, with `<h1>` being the highest priority."
+    },
+    {
+      "id": 27,
+      "question": "What is the difference between `<input>` and `<textarea>`?",
+      "answer": "`<input>` is for single-line input, while `<textarea>` is for multi-line input."
+    },
+    {
+      "id": 28,
+      "question": "What is the `<link>` tag used for?",
+      "answer": "It links external resources like CSS files. Example: `<link rel=\"stylesheet\" href=\"styles.css\">`."
+    },
+    {
+      "id": 29,
+      "question": "How do you embed audio and video in HTML?",
+      "answer": "Use `<audio>` and `<video>` tags with respective `src` attributes."
+    },
+    {
+      "id": 30,
+      "question": "What is the `<nav>` tag used for?",
+      "answer": "It is used to define a section of navigation links."
+    }
+  ],
+  "CSS": [
+    {
+      "id": 1,
+      "question": "What is CSS?",
+      "answer": "CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a web page."
+    },
+    {
+      "id": 2,
+      "question": "What are the different types of CSS?",
+      "answer": "Inline CSS, Internal CSS, and External CSS."
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between `relative`, `absolute`, and `fixed` positioning in CSS?",
+      "answer": "- Relative: Positioned relative to its normal position.\n- Absolute: Positioned relative to the nearest positioned ancestor.\n- Fixed: Positioned relative to the viewport and does not move during scrolling."
+    },
+    {
+      "id": 4,
+      "question": "What is the `z-index` in CSS?",
+      "answer": "It determines the stack order of elements; higher values are displayed in front of lower ones."
+    },
+    {
+      "id": 5,
+      "question": "What are pseudo-classes in CSS?",
+      "answer": "Pseudo-classes define a special state of an element, e.g., `:hover`, `:focus`, and `:nth-child()`."
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between `inline`, `block`, and `inline-block` elements?",
+      "answer": "- Inline: Takes up only as much width as necessary.\n- Block: Takes up the full width of its container.\n- Inline-block: Behaves like inline but allows block-level properties."
+    },
+    {
+      "id": 7,
+      "question": "What are media queries in CSS?",
+      "answer": "Media queries enable responsive design by applying styles based on device size or features."
+    },
+    {
+      "id": 8,
+      "question": "What is the difference between `em` and `rem` units in CSS?",
+      "answer": "- `em`: Relative to the font-size of the parent.\n- `rem`: Relative to the font-size of the root element."
+    },
+    {
+      "id": 9,
+      "question": "What is the `float` property in CSS?",
+      "answer": "It places an element to the left or right of its container, allowing inline content to wrap around it."
+    },
+    {
+      "id": 10,
+      "question": "How do you center a div using CSS?",
+      "answer": "Use `margin: auto;` for horizontal centering and `display: flex; justify-content: center; align-items: center;` for vertical and horizontal centering."
+    },
+    {
+      "id": 11,
+      "question": "What is the difference between `absolute` and `relative` length units?",
+      "answer": "- Absolute: Fixed units like `px`, `cm`.\n- Relative: Dependent on other elements, like `%`, `em`."
+    },
+    {
+      "id": 12,
+      "question": "What is the box model in CSS?",
+      "answer": "It consists of margins, borders, padding, and the content area."
+    },
+    {
+      "id": 13,
+      "question": "What is the difference between `visibility: hidden;` and `display: none;`?",
+      "answer": "- `visibility: hidden;` Hides the element but keeps its space.\n- `display: none;` Hides the element and removes its space."
+    },
+    {
+      "id": 14,
+      "question": "What are keyframes in CSS?",
+      "answer": "They define animations by specifying styles at different points, used with the `@keyframes` rule."
+    },
+    {
+      "id": 15,
+      "question": "What is the `overflow` property?",
+      "answer": "It specifies what happens when content overflows an element's box, with values like `visible`, `hidden`, `scroll`, and `auto`."
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between `position: fixed;` and `sticky;`?",
+      "answer": "- Fixed: The element stays relative to the viewport.\n- Sticky: The element toggles between relative and fixed based on scroll position."
+    },
+    {
+      "id": 17,
+      "question": "How do you apply styles to a specific child element?",
+      "answer": "Use combinators like `>` for direct children or pseudo-classes like `:nth-child()`."
+    },
+    {
+      "id": 18,
+      "question": "What is the `flexbox` layout in CSS?",
+      "answer": "It is a layout model for distributing space within a container and aligning items, with properties like `flex-grow`, `justify-content`, and `align-items`."
+    },
+    {
+      "id": 19,
+      "question": "What is a CSS grid?",
+      "answer": "A layout system based on rows and columns, with properties like `grid-template-rows`, `grid-template-columns`, and `grid-gap`."
+    },
+    {
+      "id": 20,
+      "question": "What is the difference between `max-width` and `min-width` in CSS?",
+      "answer": "- Max-width: Sets the maximum width an element can take.\n- Min-width: Sets the minimum width an element can take."
+    },
+    {
+      "id": 21,
+      "question": "What is the difference between `opacity` and `visibility`?",
+      "answer": "- Opacity: Controls the transparency of an element (e.g., `opacity: 0;`).\n- Visibility: Toggles element visibility without affecting transparency."
+    },
+    {
+      "id": 22,
+      "question": "How do you add a background image in CSS?",
+      "answer": "Use the `background-image` property. Example: `background-image: url('image.jpg');`."
+    },
+    {
+      "id": 23,
+      "question": "What is the difference between `nth-of-type()` and `nth-child()`?",
+      "answer": "- `nth-of-type()` Selects elements of a specific type.\n- `nth-child()` Selects elements based on their position."
+    },
+    {
+      "id": 24,
+      "question": "What is the `transform` property?",
+      "answer": "It applies transformations like `rotate`, `scale`, `translate`, and `skew` to elements."
+    },
+    {
+      "id": 25,
+      "question": "How do you make a website responsive?",
+      "answer": "Use techniques like media queries, flexible grids, and responsive units like `%`, `em`, and `rem`."
+    },
+    {
+      "id": 26,
+      "question": "What is a pseudo-element in CSS?",
+      "answer": "A pseudo-element is used to style specific parts of an element, like `::before` and `::after`."
+    },
+    {
+      "id": 27,
+      "question": "What is the difference between `inline` and `inline-block` elements?",
+      "answer": "- Inline: Cannot set height and width.\n- Inline-block: Allows height and width properties while maintaining inline behavior."
+    },
+    {
+      "id": 28,
+      "question": "What is the difference between `hover` and `active` states?",
+      "answer": "- Hover: Applied when the mouse pointer is over an element.\n- Active: Applied when an element is being clicked."
+    },
+    {
+      "id": 29,
+      "question": "What are custom properties (CSS variables)?",
+      "answer": "They allow you to define reusable values with `--` syntax, e.g., `--main-color: red;`."
+    },
+    {
+      "id": 30,
+      "question": "How do you hide elements in CSS?",
+      "answer": "Use properties like `display: none;`, `visibility: hidden;`, or set the `opacity` to `0`."
+    }
+  ],
+  "JavaScript": [
+    {
+      "id": 1,
+      "question": "What is JavaScript?",
+      "answer": "JavaScript is a lightweight, interpreted programming language used to make web pages interactive. It is also widely used for backend development using Node.js."
+    },
+    {
+      "id": 2,
+      "question": "What are JavaScript data types?",
+      "answer": "The primary data types in JavaScript are:\n- Primitive Types: Number, String, Boolean, Undefined, Null, Symbol, BigInt.\n- Non-Primitive Types: Object, Array, Function."
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between `var`, `let`, and `const`?",
+      "answer": "- `var`: Function-scoped, hoisted, can be redeclared.\n- `let`: Block-scoped, not hoisted, cannot be redeclared.\n- `const`: Block-scoped, not hoisted, used for constants."
+    },
+    {
+      "id": 4,
+      "question": "What is hoisting in JavaScript?",
+      "answer": "Hoisting is JavaScript's default behavior of moving declarations to the top of the scope during the compile phase."
+    },
+    {
+      "id": 5,
+      "question": "What are JavaScript closures?",
+      "answer": "Closures are functions that retain access to their outer scope, even after the outer function has executed. Example:\n```javascript\nfunction outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    return count;\n  };\n}\nconst counter = outer();\nconsole.log(counter()); // 1\n```"
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between `==` and `===`?",
+      "answer": "- `==`: Compares values with type coercion.\n- `===`: Compares values without type coercion (strict equality)."
+    },
+    {
+      "id": 7,
+      "question": "What are JavaScript promises?",
+      "answer": "Promises are objects representing the eventual completion (or failure) of an asynchronous operation. Example:\n```javascript\nlet promise = new Promise((resolve, reject) => {\n  setTimeout(() => resolve(\"Success\"), 1000);\n});\npromise.then(console.log);\n```"
+    },
+    {
+      "id": 8,
+      "question": "What is the difference between `undefined` and `null`?",
+      "answer": "- `undefined`: A variable that has been declared but not assigned a value.\n- `null`: An explicitly assigned value representing no value or empty."
+    },
+    {
+      "id": 9,
+      "question": "What is the DOM in JavaScript?",
+      "answer": "The DOM (Document Object Model) is an interface that allows JavaScript to interact with HTML and XML documents."
+    },
+    {
+      "id": 10,
+      "question": "What is an event in JavaScript?",
+      "answer": "An event is an action that occurs in the browser, such as a click, hover, or keypress, which can be handled using JavaScript."
+    },
+    {
+      "id": 11,
+      "question": "Explain `this` in JavaScript.",
+      "answer": "The `this` keyword refers to the object it belongs to, determined by the context in which it is called."
+    },
+    {
+      "id": 12,
+      "question": "What is the difference between `call()`, `apply()`, and `bind()`?",
+      "answer": "- `call`: Invokes a function with a specific `this` and arguments provided individually.\n- `apply`: Invokes a function with a specific `this` and arguments provided as an array.\n- `bind`: Returns a new function with a specific `this`."
+    },
+    {
+      "id": 13,
+      "question": "What are arrow functions in JavaScript?",
+      "answer": "Arrow functions are a shorthand syntax for writing functions and do not bind their own `this` context."
+    },
+    {
+      "id": 14,
+      "question": "What are template literals in JavaScript?",
+      "answer": "Template literals use backticks (`` ` ``) to create strings with embedded expressions:\n```javascript\nconst name = \"Alice\";\nconsole.log(`Hello, ${name}`); // Hello, Alice\n```"
+    },
+    {
+      "id": 15,
+      "question": "What is event delegation in JavaScript?",
+      "answer": "Event delegation is a technique where a single event listener is added to a parent element to handle events on its child elements."
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between synchronous and asynchronous JavaScript?",
+      "answer": "- Synchronous: Code execution happens sequentially.\n- Asynchronous: Code execution can pause and resume, often using callbacks, promises, or async/await."
+    },
+    {
+      "id": 17,
+      "question": "What are JavaScript modules?",
+      "answer": "Modules are reusable pieces of code exported from one file and imported into another using `export` and `import`."
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between `forEach` and `map`?",
+      "answer": "- `forEach`: Iterates over an array but does not return a new array.\n- `map`: Iterates and returns a new array with transformed elements."
+    },
+    {
+      "id": 19,
+      "question": "What is `NaN` in JavaScript?",
+      "answer": "`NaN` (Not-a-Number) is a special value returned when a mathematical operation fails."
+    },
+    {
+      "id": 20,
+      "question": "How does JavaScript handle concurrency?",
+      "answer": "JavaScript uses an event loop and a single-threaded model to handle concurrency."
+    },
+    {
+      "id": 21,
+      "question": "What are JavaScript prototypes?",
+      "answer": "Prototypes are objects from which other objects inherit properties and methods."
+    },
+    {
+      "id": 22,
+      "question": "What is a callback function in JavaScript?",
+      "answer": "A callback is a function passed as an argument to another function and executed later."
+    },
+    {
+      "id": 23,
+      "question": "What is the use of `async` and `await` in JavaScript?",
+      "answer": "`async` declares a function as asynchronous, and `await` pauses execution until a promise resolves."
+    },
+    {
+      "id": 24,
+      "question": "What is the difference between `var`, `let`, and `const` in terms of scope?",
+      "answer": "- `var`: Function-scoped.\n- `let` and `const`: Block-scoped."
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of `JSON.stringify` and `JSON.parse`?",
+      "answer": "- `JSON.stringify`: Converts a JavaScript object to a JSON string.\n- `JSON.parse`: Converts a JSON string back to a JavaScript object."
+    },
+    {
+      "id": 26,
+      "question": "What is the difference between `setTimeout` and `setInterval`?",
+      "answer": "- `setTimeout`: Executes a function after a specified delay.\n- `setInterval`: Repeatedly executes a function at a specified interval."
+    },
+    {
+      "id": 27,
+      "question": "What is a higher-order function in JavaScript?",
+      "answer": "A higher-order function is a function that takes another function as an argument or returns a function."
+    },
+    {
+      "id": 28,
+      "question": "What are the different ways to create objects in JavaScript?",
+      "answer": "1. Using object literals: `const obj = { key: value };`\n2. Using `new Object()`: `const obj = new Object();`\n3. Using constructor functions.\n4. Using `Object.create()`."
+    },
+    {
+      "id": 29,
+      "question": "What is the difference between mutable and immutable objects?",
+      "answer": "- Mutable objects: Can be modified after creation (e.g., arrays, objects).\n- Immutable objects: Cannot be modified after creation (e.g., strings)."
+    },
+    {
+      "id": 30,
+      "question": "What are the different types of loops in JavaScript?",
+      "answer": "1. `for`\n2. `for...in`\n3. `for...of`\n4. `while`\n5. `do...while`"
+    },
+    {
+      "id": 31,
+      "question": "What is the `typeof` operator?",
+      "answer": "It is used to determine the type of a variable. Example: `typeof \"hello\" // \"string\"`."
+    },
+    {
+      "id": 32,
+      "question": "What is the `instanceof` operator?",
+      "answer": "It checks whether an object is an instance of a specific class or constructor. Example: `arr instanceof Array // true`."
+    },
+    {
+      "id": 33,
+      "question": "What is event bubbling and event capturing?",
+      "answer": "- Event bubbling: Events propagate from child to parent elements.\n- Event capturing: Events propagate from parent to child elements."
+    },
+    {
+      "id": 34,
+      "question": "How do you stop event propagation in JavaScript?",
+      "answer": "Use the `stopPropagation()` method."
+    },
+    {
+      "id": 35,
+      "question": "What is the difference between `Object.freeze` and `Object.seal`?",
+      "answer": "- `Object.freeze`: Prevents modification of properties and their values.\n- `Object.seal`: Prevents adding or deleting properties but allows modification of existing ones."
+    },
+    {
+      "id": 36,
+      "question": "What is a promise chain?",
+      "answer": "A sequence of `.then()` calls where the output of one promise serves as the input for the next."
+    },
+    {
+      "id": 37,
+      "question": "What are JavaScript generators?",
+      "answer": "Generators are functions that can pause and resume their execution using the `function*` syntax and the `yield` keyword."
+    },
+    {
+      "id": 38,
+      "question": "What is the difference between `map()` and `filter()`?",
+      "answer": "- `map()`: Transforms each element of an array and returns a new array.\n- `filter()`: Returns a new array containing only elements that pass a test."
+    },
+    {
+      "id": 39,
+      "question": "What is the spread operator (`...`)?",
+      "answer": "It expands iterable elements (e.g., arrays, objects). Example:\n```javascript\nconst arr1 = [1, 2];\nconst arr2 = [...arr1, 3, 4];\nconsole.log(arr2); // [1, 2, 3, 4]\n```"
+    },
+    {
+      "id": 40,
+      "question": "What is destructuring in JavaScript?",
+      "answer": "It is a syntax for extracting values from arrays or objects into variables. Example:\n```javascript\nconst { name, age } = { name: \"Alice\", age: 25 };\n```"
+    },
+    {
+      "id": 41,
+      "question": "What are JavaScript symbols?",
+      "answer": "Symbols are unique and immutable data types used as object keys to prevent naming collisions."
+    },
+    {
+      "id": 42,
+      "question": "What is memoization in JavaScript?",
+      "answer": "Memoization is an optimization technique where the results of expensive function calls are cached for reuse."
+    },
+    {
+      "id": 43,
+      "question": "What are pure functions in JavaScript?",
+      "answer": "Pure functions produce the same output for the same input and have no side effects."
+    },
+    {
+      "id": 44,
+      "question": "What is the event loop in JavaScript?",
+      "answer": "The event loop handles the execution of multiple tasks, including asynchronous code, ensuring non-blocking execution."
+    },
+    {
+      "id": 45,
+      "question": "What is the `arguments` object?",
+      "answer": "It is an array-like object available within all non-arrow functions that contains the arguments passed to the function."
+    },
+    {
+      "id": 46,
+      "question": "What is a shallow copy vs. a deep copy?",
+      "answer": "- Shallow copy: Copies the reference of objects (e.g., `Object.assign`).\n- Deep copy: Creates a new copy of the object and its nested properties (e.g., `JSON.parse(JSON.stringify(obj))`)."
+    },
+    {
+      "id": 47,
+      "question": "What is functional programming in JavaScript?",
+      "answer": "A paradigm that treats functions as first-class citizens and emphasizes immutability and pure functions."
+    },
+    {
+      "id": 48,
+      "question": "What is the `reduce` method in JavaScript?",
+      "answer": "It reduces an array to a single value by applying a reducer function:\n```javascript\nconst sum = [1, 2, 3].reduce((acc, val) => acc + val, 0);\n```"
+    },
+    {
+      "id": 49,
+      "question": "What is a module bundler?",
+      "answer": "A tool that bundles multiple JavaScript files into one file (e.g., Webpack, Rollup)."
+    },
+    {
+      "id": 50,
+      "question": "What is asynchronous iteration in JavaScript?",
+      "answer": "Asynchronous iteration uses `for await...of` to loop over asynchronous data sources, such as streams."
+    },
+    {
+      "id": 51,
+      "question": "What is the `fetch` API in JavaScript?",
+      "answer": "The `fetch` API is used to make HTTP requests and handle responses. Example:\n```javascript\nfetch('https://api.example.com/data')\n  .then(response => response.json())\n  .then(data => console.log(data));\n```"
+    },
+    {
+      "id": 52,
+      "question": "What is the difference between `localStorage` and `sessionStorage`?",
+      "answer": "- `localStorage`: Stores data with no expiration time.\n- `sessionStorage`: Stores data for the duration of the session (until the browser is closed)."
+    },
+    {
+      "id": 53,
+      "question": "What is the `setImmediate` function in Node.js?",
+      "answer": "It is a method that executes a script once the current event loop completes, similar to `setTimeout` with a delay of 0."
+    },
+    {
+      "id": 54,
+      "question": "How do you handle errors in JavaScript?",
+      "answer": "Use `try...catch` blocks:\n```javascript\ntry {\n  // code that may throw an error\n} catch (error) {\n  console.error(error);\n}\n```"
+    },
+    {
+      "id": 55,
+      "question": "What is the difference between a constructor function and a class in JavaScript?",
+      "answer": "Constructor functions are older ways of creating objects using prototypes. Classes are syntactic sugar over constructor functions, offering a cleaner, more structured syntax."
+    },
+    {
+      "id": 56,
+      "question": "What is the `async` keyword in JavaScript?",
+      "answer": "It declares a function as asynchronous, returning a promise."
+    },
+    {
+      "id": 57,
+      "question": "How does the `await` keyword work in JavaScript?",
+      "answer": "It pauses the execution of an async function until the promise resolves."
+    },
+    {
+      "id": 58,
+      "question": "What is a Map in JavaScript, and how is it different from an Object?",
+      "answer": "A `Map` stores key-value pairs and allows any value as a key, while an object only allows strings or symbols as keys."
+    },
+    {
+      "id": 59,
+      "question": "What is a Set in JavaScript, and how is it different from an Array?",
+      "answer": "A `Set` is a collection of unique values. Unlike arrays, it does not allow duplicate elements and provides faster lookups for existing values."
+    },
+    {
+      "id": 60,
+      "question": "What is the `finally()` method in promises?",
+      "answer": "`finally()` is executed after a promise is settled, regardless of whether it was fulfilled or rejected."
+    },
+    {
+      "id": 61,
+      "question": "What is the purpose of `Object.entries()` in JavaScript?",
+      "answer": "It returns an array of a given object's own enumerable property `[key, value]` pairs."
+    },
+    {
+      "id": 62,
+      "question": "What is the difference between `for...in` and `for...of` loops?",
+      "answer": "- `for...in`: Iterates over enumerable properties of an object.\n- `for...of`: Iterates over iterable objects like arrays, strings, or maps."
+    },
+    {
+      "id": 63,
+      "question": "What are tagged template literals?",
+      "answer": "Tagged template literals allow you to parse template literals with a custom function.\n```javascript\nfunction tag(strings, ...values) {\n  return strings.raw[0];\n}\ntag`Hello \\n World!`;\n```"
+    },
+    {
+      "id": 64,
+      "question": "What is the difference between `innerHTML` and `textContent`?",
+      "answer": "`innerHTML` sets or retrieves HTML content, parsing it as HTML. `textContent` sets or retrieves the text content without parsing it as HTML."
+    },
+    {
+      "id": 65,
+      "question": "What is the purpose of `Object.fromEntries()`?",
+      "answer": "It transforms a list of key-value pairs into an object."
+    },
+    {
+      "id": 66,
+      "question": "What is a Proxy in JavaScript?",
+      "answer": "A `Proxy` object is used to define custom behavior for fundamental operations like property access and function invocation."
+    },
+    {
+      "id": 67,
+      "question": "What is the difference between `Array.slice()` and `Array.splice()`?",
+      "answer": "- `slice`: Returns a new array without modifying the original array.\n- `splice`: Modifies the original array by adding or removing elements."
+    },
+    {
+      "id": 68,
+      "question": "What is a debounce function in JavaScript?",
+      "answer": "A debounce function ensures that a function is called only once within a specified time period."
+    },
+    {
+      "id": 69,
+      "question": "What is a throttle function in JavaScript?",
+      "answer": "A throttle function ensures that a function is called at most once in a specified interval of time."
+    },
+    {
+      "id": 70,
+      "question": "What are the different ways to iterate over an array in JavaScript?",
+      "answer": "1. `for` loop.\n2. `forEach()`.\n3. `map()`.\n4. `for...of` loop.\n5. `reduce()`."
+    },
+    {
+      "id": 71,
+      "question": "What is a Service Worker in JavaScript?",
+      "answer": "A Service Worker is a script that runs in the background and helps enable offline experiences, caching, and push notifications."
+    },
+    {
+      "id": 72,
+      "question": "What is the `atob()` function in JavaScript?",
+      "answer": "It decodes a string that has been encoded using Base64."
+    },
+    {
+      "id": 73,
+      "question": "What is the `btoa()` function in JavaScript?",
+      "answer": "It encodes a string into Base64."
+    },
+    {
+      "id": 74,
+      "question": "What are JavaScript decorators?",
+      "answer": "Decorators are a special kind of declaration used to modify classes and their members."
+    },
+    {
+      "id": 75,
+      "question": "What is dynamic import in JavaScript?",
+      "answer": "It allows modules to be loaded dynamically at runtime using `import()`."
+    },
+    {
+      "id": 76,
+      "question": "What is the difference between `let` and `var` in JavaScript?",
+      "answer": "- `let`: Block-scoped, cannot be redeclared, not hoisted.\n- `var`: Function-scoped, can be redeclared, hoisted."
+    },
+    {
+      "id": 77,
+      "question": "What is an Immediately Invoked Function Expression (IIFE)?",
+      "answer": "An IIFE is a function that is executed immediately after its definition:\n```javascript\n(function() {\n  console.log(\"IIFE executed!\");\n})();\n```"
+    },
+    {
+      "id": 78,
+      "question": "What are JavaScript async iterators?",
+      "answer": "Async iterators allow looping through asynchronous data sources using `for await...of`."
+    },
+    {
+      "id": 79,
+      "question": "What is the purpose of `Object.defineProperty()`?",
+      "answer": "It defines a new property or modifies an existing property on an object with specific configurations."
+    },
+    {
+      "id": 80,
+      "question": "What is the purpose of the `typeof` operator?",
+      "answer": "The `typeof` operator is used to determine the type of a variable. Example: `typeof 42 // \"number\"`."
+    },
+    {
+      "id": 81,
+      "question": "What is a polyfill in JavaScript?",
+      "answer": "A polyfill is code that implements a feature on older browsers that do not support it natively."
+    },
+    {
+      "id": 82,
+      "question": "What is the difference between `push()` and `pop()`?",
+      "answer": "- `push()`: Adds an element to the end of an array.\n- `pop()`: Removes the last element from an array."
+    },
+    {
+      "id": 83,
+      "question": "What is the difference between `unshift()` and `shift()`?",
+      "answer": "- `unshift()`: Adds an element to the beginning of an array.\n- `shift()`: Removes the first element from an array."
+    },
+    {
+      "id": 84,
+      "question": "What is the `new` keyword in JavaScript?",
+      "answer": "The `new` keyword is used to create an instance of a user-defined object or a built-in object."
+    },
+    {
+      "id": 85,
+      "question": "What is the purpose of the `Error` object in JavaScript?",
+      "answer": "The `Error` object provides information about runtime errors, including a message and stack trace, and can be extended for custom error handling."
+    },
+    {
+      "id": 86,
+      "question": "What is the purpose of `Array.prototype.find()`?",
+      "answer": "It returns the first element in an array that satisfies a given condition."
+    },
+    {
+      "id": 87,
+      "question": "What is the difference between synchronous and asynchronous functions?",
+      "answer": "- Synchronous: Blocks further execution until the current operation completes.\n- Asynchronous: Executes without blocking the main thread."
+    },
+    {
+      "id": 88,
+      "question": "What is the `in` operator in JavaScript?",
+      "answer": "The `in` operator checks if a property exists in an object. Example: `'key' in obj`."
+    },
+    {
+      "id": 89,
+      "question": "What is a JavaScript transpiler?",
+      "answer": "A transpiler converts modern JavaScript code into older versions for browser compatibility."
+    },
+    {
+      "id": 90,
+      "question": "What is the purpose of `Object.keys()`?",
+      "answer": "It returns an array of a given object's own property names."
+    },
+    {
+      "id": 91,
+      "question": "What is a promise in JavaScript?",
+      "answer": "A promise represents a value that will be available in the future after an asynchronous operation."
+    },
+    {
+      "id": 92,
+      "question": "What is the difference between `isNaN()` and `Number.isNaN()`?",
+      "answer": "- `isNaN()`: Converts the value to a number and checks if it is NaN.\n- `Number.isNaN()`: Checks if the value is exactly NaN without type conversion."
+    },
+    {
+      "id": 93,
+      "question": "What are Private Class Fields in JavaScript?",
+      "answer": "Private class fields are properties of a class that are not accessible outside the class definition. They are prefixed with a `#` symbol and ensure encapsulation."
+    },
+    {
+      "id": 94,
+      "question": "What is the purpose of `Function.prototype.bind()`?",
+      "answer": "It creates a new function with a specific `this` value and optional arguments."
+    },
+    {
+      "id": 95,
+      "question": "What are JavaScript iterables?",
+      "answer": "Iterables are objects that can be iterated using `for...of`, such as arrays, strings, and maps."
+    },
+    {
+      "id": 96,
+      "question": "What is the difference between `Object.create()` and object literals?",
+      "answer": "- `Object.create()`: Creates an object with a specified prototype.\n- Object literals: Create objects with a default `Object.prototype`."
+    },
+    {
+      "id": 97,
+      "question": "What is the purpose of `Array.prototype.reduceRight()`?",
+      "answer": "It applies a function to reduce an array to a single value, starting from the last element."
+    },
+    {
+      "id": 98,
+      "question": "What is JSONP in JavaScript?",
+      "answer": "JSONP (JSON with Padding) is a technique to make cross-origin requests by using `<script>` tags."
+    },
+    {
+      "id": 99,
+      "question": "What is the difference between function declarations and function expressions?",
+      "answer": "Function declarations are hoisted and can be used before they are defined. Function expressions are not hoisted and are only accessible after the assignment."
+    },
+    {
+      "id": 100,
+      "question": "What are async/await in JavaScript?",
+      "answer": "Async/await simplify working with promises, allowing asynchronous code to be written like synchronous code."
+    }
+  ],
+  "React": [
+    {
+      "id": 1,
+      "question": "What is React?",
+      "answer": "React is a JavaScript library for building user interfaces. It is component-based and maintained by Facebook."
+    },
+    {
+      "id": 2,
+      "question": "What are the key features of React?",
+      "answer": "- Component-based architecture\n- Virtual DOM\n- Declarative UI\n- One-way data binding"
+    },
+    {
+      "id": 3,
+      "question": "What is JSX?",
+      "answer": "JSX (JavaScript XML) is a syntax extension for JavaScript used in React to describe UI elements."
+    },
+    {
+      "id": 4,
+      "question": "What is the Virtual DOM?",
+      "answer": "The Virtual DOM is an in-memory representation of the real DOM. React updates the Virtual DOM first, then efficiently updates the real DOM."
+    },
+    {
+      "id": 5,
+      "question": "What are React components?",
+      "answer": "Components are independent, reusable pieces of UI. They can be class-based or functional."
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between a class component and a functional component?",
+      "answer": "- Class Component: Uses ES6 classes, requires `render()` method, supports lifecycle methods.\n- Functional Component: Uses functions, supports React Hooks for state and lifecycle."
+    },
+    {
+      "id": 7,
+      "question": "What are React Hooks?",
+      "answer": "Hooks are functions that let you use state and other React features in functional components. Example: `useState`, `useEffect`."
+    },
+    {
+      "id": 8,
+      "question": "What is the use of `useState` in React?",
+      "answer": "`useState` is a Hook that allows you to add state to functional components.\n```javascript\nconst [count, setCount] = useState(0);\n```"
+    },
+    {
+      "id": 9,
+      "question": "What is `useEffect` in React?",
+      "answer": "`useEffect` is a Hook that performs side effects like fetching data or subscribing to events.\n```javascript\nuseEffect(() => {\n  console.log('Component mounted');\n}, []);\n```"
+    },
+    {
+      "id": 10,
+      "question": "What is the difference between props and state?",
+      "answer": "- Props: Passed from parent to child components, immutable.\n- State: Managed within the component, mutable."
+    },
+    {
+      "id": 11,
+      "question": "What is the purpose of keys in React?",
+      "answer": "Keys help identify elements in lists for efficient rendering and updating by React."
+    },
+    {
+      "id": 12,
+      "question": "What is `PropTypes` in React?",
+      "answer": "`PropTypes` is used for runtime type checking of props in a React component.\n```javascript\nMyComponent.propTypes = {\n  name: PropTypes.string,\n};\n```"
+    },
+    {
+      "id": 13,
+      "question": "What are higher-order components (HOC)?",
+      "answer": "HOCs are functions that take a component and return a new component, often used for reusing logic."
+    },
+    {
+      "id": 14,
+      "question": "What is the Context API in React?",
+      "answer": "The Context API is used to pass data through the component tree without manually passing props down every level.\n```javascript\nconst MyContext = React.createContext();\n```"
+    },
+    {
+      "id": 15,
+      "question": "What is `useContext` in React?",
+      "answer": "`useContext` is a Hook that allows you to consume context values in functional components.\n```javascript\nconst value = useContext(MyContext);\n```"
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between `useMemo` and `useCallback`?",
+      "answer": "- `useMemo`: Memoizes a computed value.\n- `useCallback`: Memoizes a function."
+    },
+    {
+      "id": 17,
+      "question": "What are React fragments?",
+      "answer": "React fragments (`<></>` or `<React.Fragment>`) are used to group multiple elements without adding extra nodes to the DOM."
+    },
+    {
+      "id": 18,
+      "question": "What is React Router?",
+      "answer": "React Router is a library for managing navigation in a React application."
+    },
+    {
+      "id": 19,
+      "question": "What is lazy loading in React?",
+      "answer": "Lazy loading delays the loading of components or resources until they are needed."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of the `React.StrictMode` component?",
+      "answer": "`React.StrictMode` helps identify potential problems in an application by running additional checks."
+    },
+    {
+      "id": 21,
+      "question": "What is Redux?",
+      "answer": "Redux is a state management library often used with React to manage application-wide state."
+    },
+    {
+      "id": 22,
+      "question": "What is the difference between Redux and the Context API?",
+      "answer": "- Redux: Centralized, more powerful for complex state management, uses actions and reducers.\n- Context API: Simpler, suitable for small applications."
+    },
+    {
+      "id": 23,
+      "question": "What is `useReducer` in React?",
+      "answer": "`useReducer` is a Hook that manages state using a reducer function.\n```javascript\nconst [state, dispatch] = useReducer(reducer, initialState);\n```"
+    },
+    {
+      "id": 24,
+      "question": "How do you optimize performance in React applications?",
+      "answer": "- Use `React.memo`.\n- Avoid inline functions and objects.\n- Code-splitting and lazy loading.\n- Use the production build."
+    },
+    {
+      "id": 25,
+      "question": "What is the difference between controlled and uncontrolled components?",
+      "answer": "- Controlled: Form elements are controlled by React state.\n- Uncontrolled: Form elements maintain their own state."
+    },
+    {
+      "id": 26,
+      "question": "What are React Portals?",
+      "answer": "React Portals allow you to render components outside their parent DOM hierarchy using `ReactDOM.createPortal`."
+    },
+    {
+      "id": 27,
+      "question": "What is the significance of `key` in React?",
+      "answer": "`key` is a special attribute used to uniquely identify elements in lists for efficient updates by React."
+    },
+    {
+      "id": 28,
+      "question": "What is the difference between `componentWillMount` and `componentDidMount`?",
+      "answer": "- `componentWillMount`: Invoked before the component is mounted.\n- `componentDidMount`: Invoked after the component is mounted."
+    },
+    {
+      "id": 29,
+      "question": "What are React PropTypes?",
+      "answer": "PropTypes are used to validate props passed to a component to ensure they meet the required types."
+    },
+    {
+      "id": 30,
+      "question": "What is the `memo` function in React?",
+      "answer": "`React.memo` is a higher-order component that prevents unnecessary re-renders of functional components by memoizing their output."
+    },
+    {
+      "id": 31,
+      "question": "How does `shouldComponentUpdate` work in React?",
+      "answer": "`shouldComponentUpdate` is a lifecycle method that determines whether a component should re-render based on changes to props or state."
+    },
+    {
+      "id": 32,
+      "question": "What is `PureComponent` in React?",
+      "answer": "`PureComponent` is a base class in React that automatically implements `shouldComponentUpdate` with a shallow prop and state comparison."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of `getDerivedStateFromProps`?",
+      "answer": "This static lifecycle method is used to update state based on changes to props."
+    },
+    {
+      "id": 34,
+      "question": "What is React's `Suspense` component?",
+      "answer": "`Suspense` is used to handle lazy loading of components and displays a fallback during loading."
+    },
+    {
+      "id": 35,
+      "question": "What is the difference between controlled and uncontrolled components in React?",
+      "answer": "- Controlled components: Manage form data through React state.\n- Uncontrolled components: Manage form data through the DOM."
+    },
+    {
+      "id": 36,
+      "question": "How can you handle forms in React?",
+      "answer": "Forms in React can be handled using controlled components with `useState` or `useReducer` for state management."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the `forwardRef` function in React?",
+      "answer": "`forwardRef` allows components to forward a `ref` to a child component."
+    },
+    {
+      "id": 38,
+      "question": "What is server-side rendering (SSR) in React?",
+      "answer": "SSR renders React components on the server and sends fully rendered HTML to the client, improving performance and SEO."
+    },
+    {
+      "id": 39,
+      "question": "What is hydration in React?",
+      "answer": "Hydration is the process of attaching React's event listeners to server-rendered HTML."
+    },
+    {
+      "id": 40,
+      "question": "What is the difference between `useEffect` and `useLayoutEffect`?",
+      "answer": "- `useEffect`: Runs asynchronously after rendering.\n- `useLayoutEffect`: Runs synchronously after DOM mutations."
+    },
+    {
+      "id": 41,
+      "question": "What are error boundaries in React?",
+      "answer": "Error boundaries are React components that catch JavaScript errors in their child components and display fallback UIs."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of `useImperativeHandle` in React?",
+      "answer": "`useImperativeHandle` customizes the `ref` instance exposed to parent components."
+    },
+    {
+      "id": 43,
+      "question": "What are the limitations of React?",
+      "answer": "- Lack of official support for complex state management.\n- High learning curve for beginners.\n- Requires additional libraries for routing and state management."
+    },
+    {
+      "id": 44,
+      "question": "What are synthetic events in React?",
+      "answer": "Synthetic events are wrappers around browser-native events, ensuring cross-browser compatibility in React."
+    },
+    {
+      "id": 45,
+      "question": "What is a React keyframe animation?",
+      "answer": "React keyframe animations use CSS or libraries like `react-spring` to define animation states and transitions."
+    },
+    {
+      "id": 46,
+      "question": "What is Redux Thunk?",
+      "answer": "Redux Thunk is middleware that allows you to write action creators that return functions instead of actions, enabling asynchronous logic."
+    },
+    {
+      "id": 47,
+      "question": "How do you use `contextType` in React?",
+      "answer": "`contextType` is a property of a class component that allows it to consume a specific context."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of `defaultProps` in React?",
+      "answer": "`defaultProps` define default values for props in a component."
+    },
+    {
+      "id": 49,
+      "question": "How can you optimize React applications?",
+      "answer": "- Use `React.memo` for memoization.\n- Split code using `React.lazy`.\n- Use production builds.\n- Implement efficient state management."
+    },
+    {
+      "id": 50,
+      "question": "What is the difference between `React.Fragment` and `<div>`?",
+      "answer": "- `React.Fragment`: Does not add extra nodes to the DOM.\n- `<div>`: Adds a new node to the DOM."
+    },
+    {
+      "id": 51,
+      "question": "What is `React.lazy`?",
+      "answer": "`React.lazy` enables dynamic import of components, allowing for code splitting and lazy loading."
+    },
+    {
+      "id": 52,
+      "question": "How do you handle errors in React?",
+      "answer": "Errors in React can be handled using Error Boundaries or the `try...catch` block for async operations."
+    },
+    {
+      "id": 53,
+      "question": "What is the purpose of `React.memo`?",
+      "answer": "`React.memo` is used to memoize functional components, preventing unnecessary re-renders by comparing props."
+    },
+    {
+      "id": 54,
+      "question": "What is the difference between `ReactDOM.render` and `hydrate`?",
+      "answer": "- `ReactDOM.render`: Used for rendering React applications on the client side.\n- `hydrate`: Used for hydrating server-rendered React applications on the client side."
+    },
+    {
+      "id": 55,
+      "question": "What is the role of `strictMode` in React?",
+      "answer": "It helps identify potential issues in an application, such as deprecated lifecycle methods and side effects in `useEffect`."
+    },
+    {
+      "id": 56,
+      "question": "How do you pass a function as a prop in React?",
+      "answer": "Functions can be passed as props like any other value:\n```javascript\n<MyComponent handleClick={() => console.log('Clicked!')} />\n```"
+    },
+    {
+      "id": 57,
+      "question": "What are the benefits of server-side rendering in React?",
+      "answer": "- Faster initial page load.\n- Better SEO.\n- Reduced client-side processing."
+    },
+    {
+      "id": 58,
+      "question": "What is React Fiber?",
+      "answer": "React Fiber is the underlying algorithm for React's rendering engine, enabling incremental rendering and better responsiveness."
+    },
+    {
+      "id": 59,
+      "question": "How do you update state based on previous state in React?",
+      "answer": "Use the functional form of `setState`:\n```javascript\nsetState(prevState => ({ count: prevState.count + 1 }));\n```"
+    },
+    {
+      "id": 60,
+      "question": "What is React's reconciliation process?",
+      "answer": "Reconciliation is the process React uses to compare the current Virtual DOM with the previous one and efficiently update the real DOM."
+    },
+    {
+      "id": 61,
+      "question": "What is the purpose of the `useRef` Hook?",
+      "answer": "`useRef` is used to create mutable references that persist across renders, often for accessing DOM elements or storing instance variables."
+    },
+    {
+      "id": 62,
+      "question": "How do you share state between components in React?",
+      "answer": "State can be shared using:\n- Lifting state up to a common parent.\n- Context API.\n- State management libraries like Redux or MobX."
+    },
+    {
+      "id": 63,
+      "question": "What are React Snapshots?",
+      "answer": "Snapshots are tests that capture the rendered output of a component at a specific point in time, often used for UI regression testing."
+    },
+    {
+      "id": 64,
+      "question": "What is the purpose of `React.Children`?",
+      "answer": "`React.Children` provides utilities to work with children props, such as `map`, `forEach`, and `count`."
+    },
+    {
+      "id": 65,
+      "question": "What is the difference between `useReducer` and `useState`?",
+      "answer": "- `useState`: Best for simple state logic.\n- `useReducer`: Ideal for complex state transitions with multiple actions."
+    },
+    {
+      "id": 66,
+      "question": "How do you perform code splitting in React?",
+      "answer": "Use dynamic imports with `React.lazy` and `Suspense` for code splitting."
+    },
+    {
+      "id": 67,
+      "question": "What are hooks rules in React?",
+      "answer": "1. Only call hooks at the top level of a function.\n2. Only call hooks within React functional components or custom hooks."
+    },
+    {
+      "id": 68,
+      "question": "What is the difference between `Fragment` and an array of elements in React?",
+      "answer": "- `Fragment`: Does not add extra nodes to the DOM.\n- Array of elements: May require a `key` for each child and can add complexity."
+    },
+    {
+      "id": 69,
+      "question": "How do you prevent unnecessary re-renders in React?",
+      "answer": "- Use `React.memo`.\n- Use `useCallback` and `useMemo`.\n- Implement `shouldComponentUpdate` or extend `PureComponent` in class components."
+    },
+    {
+      "id": 70,
+      "question": "What is the difference between `React.createContext` and `useContext`?",
+      "answer": "- `React.createContext`: Creates a context object.\n- `useContext`: Consumes the context value in functional components."
+    },
+    {
+      "id": 71,
+      "question": "How do you handle side effects in React components?",
+      "answer": "Use the `useEffect` Hook to handle side effects such as fetching data or subscribing to events."
+    },
+    {
+      "id": 72,
+      "question": "What is `forwardRef` in React?",
+      "answer": "`forwardRef` allows you to pass a `ref` from a parent component to a child component."
+    },
+    {
+      "id": 73,
+      "question": "What is the difference between `props` and `state`?",
+      "answer": "- `Props`: Immutable, passed from parent to child.\n- `State`: Mutable, managed within the component."
+    },
+    {
+      "id": 74,
+      "question": "What are controlled components in React?",
+      "answer": "Controlled components are form elements whose values are controlled by React state."
+    },
+    {
+      "id": 75,
+      "question": "What is the purpose of `setState` in React?",
+      "answer": "`setState` updates a component's state and triggers a re-render."
+    },
+    {
+      "id": 76,
+      "question": "What are React DevTools?",
+      "answer": "React DevTools is a browser extension that helps debug React applications by inspecting component hierarchies and states."
+    },
+    {
+      "id": 77,
+      "question": "How do you use Prop Drilling in React?",
+      "answer": "Prop Drilling involves passing props from parent components down to deeply nested child components."
+    },
+    {
+      "id": 78,
+      "question": "What is the purpose of `useDebugValue` in React?",
+      "answer": "`useDebugValue` is a Hook used to display custom debug information for custom Hooks in React DevTools."
+    },
+    {
+      "id": 79,
+      "question": "What is React's `lazy` loading?",
+      "answer": "It is a method for loading components only when they are required, reducing the initial bundle size."
+    },
+    {
+      "id": 80,
+      "question": "What is the `useLayoutEffect` Hook in React?",
+      "answer": "`useLayoutEffect` is similar to `useEffect` but fires synchronously after all DOM mutations."
+    },
+    {
+      "id": 81,
+      "question": "How do you memoize values in React?",
+      "answer": "Use the `useMemo` Hook to memoize expensive calculations.\n```javascript\nconst memoizedValue = useMemo(() => computeValue(a, b), [a, b]);\n```"
+    },
+    {
+      "id": 82,
+      "question": "What is the `useCallback` Hook in React?",
+      "answer": "`useCallback` is used to memoize functions, preventing them from being re-created on every render.\n```javascript\nconst memoizedCallback = useCallback(() => doSomething(a, b), [a, b]);\n```"
+    },
+    {
+      "id": 83,
+      "question": "How do you handle conditional rendering in React?",
+      "answer": "Use JavaScript conditions like `if`, ternary operators, or logical `&&` inside JSX.\n```javascript\n{isLoggedIn ? <Dashboard /> : <Login />}\n```"
+    },
+    {
+      "id": 84,
+      "question": "What is the `componentDidCatch` lifecycle method in React?",
+      "answer": "It is used in error boundaries to catch JavaScript errors in child components and log error information."
+    },
+    {
+      "id": 85,
+      "question": "What is the purpose of the `key` attribute in React lists?",
+      "answer": "The `key` attribute uniquely identifies list items, helping React optimize rendering."
+    },
+    {
+      "id": 86,
+      "question": "How do you achieve routing in React?",
+      "answer": "Use React Router to define routes and manage navigation.\n```javascript\n<BrowserRouter>\n  <Route path=\"/home\" component={Home} />\n</BrowserRouter>\n```"
+    },
+    {
+      "id": 87,
+      "question": "What is the `useHistory` Hook in React Router?",
+      "answer": "`useHistory` allows navigation programmatically and provides access to the history stack."
+    },
+    {
+      "id": 88,
+      "question": "What are portals in React?",
+      "answer": "Portals allow rendering children into a DOM node outside the parent hierarchy.\n```javascript\nReactDOM.createPortal(child, container);\n```"
+    },
+    {
+      "id": 89,
+      "question": "What are context providers and consumers in React?",
+      "answer": "- Provider: Supplies context values to child components.\n- Consumer: Reads context values provided by the provider."
+    },
+    {
+      "id": 90,
+      "question": "What is `useTransition` in React?",
+      "answer": "`useTransition` is used for managing transitions between UI states, ensuring smooth updates."
+    },
+    {
+      "id": 91,
+      "question": "What is the role of `React.StrictMode`?",
+      "answer": "It identifies potential problems in an application by enabling additional checks and warnings."
+    },
+    {
+      "id": 92,
+      "question": "How do you fetch data in React?",
+      "answer": "Use `useEffect` for side effects and libraries like Axios or Fetch API to make HTTP requests.\n```javascript\nuseEffect(() => {\n  fetchData();\n}, []);\n```"
+    },
+    {
+      "id": 93,
+      "question": "What is a custom Hook in React?",
+      "answer": "Custom Hooks are reusable functions that encapsulate stateful logic and can be shared across components.\n```javascript\nfunction useCustomHook() {\n  const [value, setValue] = useState(0);\n  return [value, setValue];\n}\n```"
+    },
+    {
+      "id": 94,
+      "question": "What is `hydrateRoot` in React 18?",
+      "answer": "It is a new API for hydrating server-rendered HTML in React applications."
+    },
+    {
+      "id": 95,
+      "question": "How does React handle updates to the state?",
+      "answer": "React schedules updates to the state and re-renders components affected by the changes."
+    },
+    {
+      "id": 96,
+      "question": "What is React Concurrent Mode?",
+      "answer": "Concurrent Mode enables React to render tasks without blocking the main thread, improving responsiveness."
+    },
+    {
+      "id": 97,
+      "question": "What is the `useReducer` Hook?",
+      "answer": "It manages complex state logic by using a reducer function.\n```javascript\nconst [state, dispatch] = useReducer(reducer, initialState);\n```"
+    },
+    {
+      "id": 98,
+      "question": "How do you test React components?",
+      "answer": "Use libraries like Jest and React Testing Library for unit and integration testing."
+    },
+    {
+      "id": 99,
+      "question": "What are synthetic events in React?",
+      "answer": "Synthetic events are React's cross-browser wrapper around native events, ensuring consistency."
+    },
+    {
+      "id": 100,
+      "question": "How do you handle side effects in React?",
+      "answer": "Use the `useEffect` Hook to manage side effects like data fetching and event subscriptions."
+    }
+  ],
+  "TypeScript": [
+    {
+      "id": 1,
+      "question": "What is TypeScript?",
+      "answer": "TypeScript is a superset of JavaScript that adds static typing, interfaces, and compile-time error checking."
+    },
+    {
+      "id": 2,
+      "question": "What are the key features of TypeScript?",
+      "answer": "- Static typing.\n- Type inference.\n- Interfaces.\n- Advanced tooling and IntelliSense.\n- Compatibility with JavaScript."
+    },
+    {
+      "id": 3,
+      "question": "How do you install TypeScript?",
+      "answer": "Use the npm command:\n```bash\nnpm install -g typescript\n```"
+    },
+    {
+      "id": 4,
+      "question": "What is the `tsconfig.json` file?",
+      "answer": "It is a configuration file used to define TypeScript project settings, such as compiler options and file paths."
+    },
+    {
+      "id": 5,
+      "question": "What is type inference in TypeScript?",
+      "answer": "Type inference allows TypeScript to automatically determine the type of a variable based on its value."
+    },
+    {
+      "id": 6,
+      "question": "What are interfaces in TypeScript?",
+      "answer": "Interfaces define the structure of an object, ensuring that it adheres to a specific contract.\n```typescript\ninterface User {\n  name: string;\n  age: number;\n}\n```"
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between `interface` and `type` in TypeScript?",
+      "answer": "- `interface`: Used for object shapes and can be extended.\n- `type`: Can represent any type, including primitives and unions."
+    },
+    {
+      "id": 8,
+      "question": "What are union types in TypeScript?",
+      "answer": "Union types allow a variable to hold multiple types:\n```typescript\nlet value: string | number;\n```"
+    },
+    {
+      "id": 9,
+      "question": "What are intersection types in TypeScript?",
+      "answer": "Intersection types combine multiple types into one:\n```typescript\ntype Admin = User & { permissions: string[] };\n```"
+    },
+    {
+      "id": 10,
+      "question": "What are generics in TypeScript?",
+      "answer": "Generics allow components or functions to operate on a variety of types while ensuring type safety:\n```typescript\nfunction identity<T>(arg: T): T {\n  return arg;\n}\n```"
+    },
+    {
+      "id": 11,
+      "question": "What is the `readonly` modifier in TypeScript?",
+      "answer": "It prevents properties from being reassigned:\n```typescript\nreadonly name: string;\n```"
+    },
+    {
+      "id": 12,
+      "question": "What are enums in TypeScript?",
+      "answer": "Enums define a set of named constants:\n```typescript\nenum Direction {\n  Up,\n  Down,\n  Left,\n  Right\n}\n```"
+    },
+    {
+      "id": 13,
+      "question": "What is the `any` type in TypeScript?",
+      "answer": "The `any` type disables type checking for a variable, allowing it to hold any value."
+    },
+    {
+      "id": 14,
+      "question": "What is the `unknown` type in TypeScript?",
+      "answer": "The `unknown` type ensures that variables must be type-checked before use."
+    },
+    {
+      "id": 15,
+      "question": "What are modules in TypeScript?",
+      "answer": "Modules allow you to organize code into separate files and reuse code using `export` and `import`.\n```typescript\nexport const value = 42;\nimport { value } from './module';\n```"
+    },
+    {
+      "id": 16,
+      "question": "What is the `never` type in TypeScript?",
+      "answer": "The `never` type represents values that never occur, such as in functions that throw errors or infinite loops."
+    },
+    {
+      "id": 17,
+      "question": "What is the `void` type in TypeScript?",
+      "answer": "The `void` type is used for functions that do not return a value."
+    },
+    {
+      "id": 18,
+      "question": "How do you define a tuple in TypeScript?",
+      "answer": "Tuples allow you to define an array with fixed types and lengths:\n```typescript\nlet tuple: [string, number];\n```"
+    },
+    {
+      "id": 19,
+      "question": "What is the difference between `static` and `instance` members in TypeScript classes?",
+      "answer": "- Static members: Belong to the class and are accessed using the class name.\n- Instance members: Belong to instances of the class."
+    },
+    {
+      "id": 20,
+      "question": "How do you handle optional properties in TypeScript?",
+      "answer": "Use the `?` syntax to define optional properties:\n```typescript\ninterface User {\n  name: string;\n  age?: number;\n}\n```"
+    },
+    {
+      "id": 21,
+      "question": "What are decorators in TypeScript?",
+      "answer": "Decorators are special functions used to modify classes, methods, or properties.\n```typescript\nfunction MyDecorator(target: any) {\n  // Modify target\n}\n```"
+    },
+    {
+      "id": 22,
+      "question": "What is the difference between `==` and `===` in TypeScript?",
+      "answer": "- `==`: Compares values with type coercion.\n- `===`: Compares values without type coercion."
+    },
+    {
+      "id": 23,
+      "question": "How do you create a type alias in TypeScript?",
+      "answer": "Use the `type` keyword:\n```typescript\ntype ID = string | number;\n```"
+    },
+    {
+      "id": 24,
+      "question": "What is a mapped type in TypeScript?",
+      "answer": "Mapped types allow you to create new types based on existing ones:\n```typescript\ntype Readonly<T> = { readonly [P in keyof T]: T[P] };\n```"
+    },
+    {
+      "id": 25,
+      "question": "What is type assertion in TypeScript?",
+      "answer": "Type assertion tells the compiler to treat a value as a specific type:\n```typescript\nlet value: any = \"hello\";\nlet strLength: number = (value as string).length;\n```"
+    },
+    {
+      "id": 26,
+      "question": "What is the difference between `interface` and `abstract class` in TypeScript?",
+      "answer": "- `Interface`: Defines a contract; cannot have implementation.\n- `Abstract class`: Can have implementation and abstract methods; used as a base class."
+    },
+    {
+      "id": 27,
+      "question": "How does TypeScript handle function overloading?",
+      "answer": "TypeScript allows you to define multiple signatures for a function, and the implementation must match one of the signatures:\n```typescript\nfunction add(a: number, b: number): number;\nfunction add(a: string, b: string): string;\nfunction add(a: any, b: any): any {\n  return a + b;\n}\n```"
+    },
+    {
+      "id": 28,
+      "question": "What is type narrowing in TypeScript?",
+      "answer": "Type narrowing reduces a broad type to a more specific one using type guards, such as `typeof` or `instanceof`:\n```typescript\nfunction print(value: string | number) {\n  if (typeof value === \"string\") {\n    console.log(value.toUpperCase());\n  }\n}\n```"
+    },
+    {
+      "id": 29,
+      "question": "What is `keyof` in TypeScript?",
+      "answer": "`keyof` creates a union of the keys of a given type:\n```typescript\ntype UserKeys = keyof User; // \"name\" | \"age\"\n```"
+    },
+    {
+      "id": 30,
+      "question": "What is a utility type in TypeScript?",
+      "answer": "Utility types are built-in helpers that operate on types, such as `Partial`, `Readonly`, `Pick`, and `Record`."
+    },
+    {
+      "id": 31,
+      "question": "How do you extend an interface in TypeScript?",
+      "answer": "Use the `extends` keyword:\n```typescript\ninterface Animal {\n  name: string;\n}\ninterface Dog extends Animal {\n  breed: string;\n}\n```"
+    },
+    {
+      "id": 32,
+      "question": "What is `type` vs. `interface` for functions in TypeScript?",
+      "answer": "Both can define function types, but `type` provides more flexibility for complex scenarios:\n```typescript\ntype Add = (a: number, b: number) => number;\ninterface Add {\n  (a: number, b: number): number;\n}\n```"
+    },
+    {
+      "id": 33,
+      "question": "What are conditional types in TypeScript?",
+      "answer": "Conditional types provide type-level logic using `extends`:\n```typescript\ntype IsString<T> = T extends string ? true : false;\n```"
+    },
+    {
+      "id": 34,
+      "question": "What is `Exclude` in TypeScript?",
+      "answer": "`Exclude` removes types from a union:\n```typescript\ntype Excluded = Exclude<\"a\" | \"b\" | \"c\", \"a\">; // \"b\" | \"c\"\n```"
+    },
+    {
+      "id": 35,
+      "question": "How do you handle default parameters in TypeScript functions?",
+      "answer": "Define default values directly in the function signature:\n```typescript\nfunction greet(name: string = \"Guest\") {\n  console.log(`Hello, ${name}!`);\n}\n```"
+    },
+    {
+      "id": 36,
+      "question": "What is `Omit` in TypeScript?",
+      "answer": "`Omit` removes specific keys from a type:\n```typescript\ntype WithoutAge = Omit<User, \"age\">;\n```"
+    },
+    {
+      "id": 37,
+      "question": "How do you declare a module in TypeScript?",
+      "answer": "Use the `declare module` syntax to extend existing modules or define new ones:\n```typescript\ndeclare module \"my-library\" {\n  export function doSomething(): void;\n}\n```"
+    },
+    {
+      "id": 38,
+      "question": "What is the `this` parameter in TypeScript functions?",
+      "answer": "It allows you to define the type of `this` in a function:\n```typescript\nfunction show(this: User) {\n  console.log(this.name);\n}\n```"
+    },
+    {
+      "id": 39,
+      "question": "What is `Record` in TypeScript?",
+      "answer": "`Record` creates an object type with specified keys and values:\n```typescript\ntype UserRoles = Record<\"admin\" | \"editor\", boolean>;\n```"
+    },
+    {
+      "id": 40,
+      "question": "What is module augmentation in TypeScript?",
+      "answer": "Module augmentation allows you to add new members to existing modules:\n```typescript\ndeclare module \"express\" {\n  interface Request {\n    user?: User;\n  }\n}\n```"
+    },
+    {
+      "id": 41,
+      "question": "What are `readonly` arrays in TypeScript?",
+      "answer": "Arrays that cannot be modified after creation:\n```typescript\nconst numbers: readonly number[] = [1, 2, 3];\n```"
+    },
+    {
+      "id": 42,
+      "question": "What is `ReturnType` in TypeScript?",
+      "answer": "It extracts the return type of a function:\n```typescript\ntype Result = ReturnType<() => string>; // string\n```"
+    },
+    {
+      "id": 43,
+      "question": "How do you overload constructors in TypeScript?",
+      "answer": "Define multiple constructor signatures:\n```typescript\nclass Point {\n  constructor(x: number, y: number);\n  constructor(xy: [number, number]);\n  constructor(x: any, y?: any) {\n    // Implementation\n  }\n}\n```"
+    },
+    {
+      "id": 44,
+      "question": "What are `template literal types` in TypeScript?",
+      "answer": "They create new string types by combining literals:\n```typescript\ntype Greeting = `Hello, ${string}`;\n```"
+    },
+    {
+      "id": 45,
+      "question": "How do you use assertions in TypeScript?",
+      "answer": "Use the `as` keyword to override inferred types:\n```typescript\nconst value: any = \"Hello\";\nconst length: number = (value as string).length;\n```"
+    },
+    {
+      "id": 46,
+      "question": "What is the difference between `null` and `undefined` in TypeScript?",
+      "answer": "- `undefined`: Variable is declared but not assigned.\n- `null`: Explicitly assigned \"no value.\""
+    },
+    {
+      "id": 47,
+      "question": "What are `type guards` in TypeScript?",
+      "answer": "Type guards are functions or expressions that narrow down types:\n```typescript\nfunction isString(value: any): value is string {\n  return typeof value === \"string\";\n}\n```"
+    },
+    {
+      "id": 48,
+      "question": "What are hybrid types in TypeScript?",
+      "answer": "Hybrid types combine properties and methods:\n```typescript\ninterface Counter {\n  (start: number): string;\n  reset(): void;\n}\n```"
+    },
+    {
+      "id": 49,
+      "question": "What is the `namespace` keyword in TypeScript?",
+      "answer": "Namespaces are used to organize code and prevent name collisions:\n```typescript\nnamespace Utils {\n  export function log(message: string) {\n    console.log(message);\n  }\n}\n```"
+    },
+    {
+      "id": 50,
+      "question": "What is `Partial` in TypeScript?",
+      "answer": "`Partial` makes all properties of a type optional:\n```typescript\ntype PartialUser = Partial<User>;\n```"
+    }
+  ]
+}
