@@ -531,7 +531,7 @@
     {
       "id": 5,
       "question": "What are JavaScript closures?",
-      "answer": "Closures are functions that retain access to their outer scope, even after the outer function has executed. Example:\n```javascript\nfunction outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    return count;\n  };\n}\nconst counter = outer();\nconsole.log(counter()); // 1\n```"
+      "answer": "Closures are functions that retain access to their outer scope, even after the outer function has executed. Example:\n```function outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    return count;\n  };\n}\nconst counter = outer();\nconsole.log(counter()); // 1\n```"
     },
     {
       "id": 6,
@@ -541,7 +541,7 @@
     {
       "id": 7,
       "question": "What are JavaScript promises?",
-      "answer": "Promises are objects representing the eventual completion (or failure) of an asynchronous operation. Example:\n```javascript\nlet promise = new Promise((resolve, reject) => {\n  setTimeout(() => resolve(\"Success\"), 1000);\n});\npromise.then(console.log);\n```"
+      "answer": "Promises are objects representing the eventual completion (or failure) of an asynchronous operation. Example:\n```let promise = new Promise((resolve, reject) => {\n  setTimeout(() => resolve(\"Success\"), 1000);\n});\npromise.then(console.log);\n```"
     },
     {
       "id": 8,
@@ -576,7 +576,7 @@
     {
       "id": 14,
       "question": "What are template literals in JavaScript?",
-      "answer": "Template literals use backticks (`` ` ``) to create strings with embedded expressions:\n```javascript\nconst name = \"Alice\";\nconsole.log(`Hello, ${name}`); // Hello, Alice\n```"
+      "answer": "Template literals use backticks (`` ` ``) to create strings with embedded expressions:\n```const name = \"Alice\";\nconsole.log(`Hello, ${name}`); // Hello, Alice\n```"
     },
     {
       "id": 15,
@@ -701,12 +701,12 @@
     {
       "id": 39,
       "question": "What is the spread operator (`...`)?",
-      "answer": "It expands iterable elements (e.g., arrays, objects). Example:\n```javascript\nconst arr1 = [1, 2];\nconst arr2 = [...arr1, 3, 4];\nconsole.log(arr2); // [1, 2, 3, 4]\n```"
+      "answer": "It expands iterable elements (e.g., arrays, objects). Example:\n```const arr1 = [1, 2];\nconst arr2 = [...arr1, 3, 4];\nconsole.log(arr2); // [1, 2, 3, 4]\n```"
     },
     {
       "id": 40,
       "question": "What is destructuring in JavaScript?",
-      "answer": "It is a syntax for extracting values from arrays or objects into variables. Example:\n```javascript\nconst { name, age } = { name: \"Alice\", age: 25 };\n```"
+      "answer": "It is a syntax for extracting values from arrays or objects into variables. Example:\n```const { name, age } = { name: \"Alice\", age: 25 };\n```"
     },
     {
       "id": 41,
@@ -746,7 +746,7 @@
     {
       "id": 48,
       "question": "What is the `reduce` method in JavaScript?",
-      "answer": "It reduces an array to a single value by applying a reducer function:\n```javascript\nconst sum = [1, 2, 3].reduce((acc, val) => acc + val, 0);\n```"
+      "answer": "It reduces an array to a single value by applying a reducer function:\n```const sum = [1, 2, 3].reduce((acc, val) => acc + val, 0);\n```"
     },
     {
       "id": 49,
@@ -761,7 +761,7 @@
     {
       "id": 51,
       "question": "What is the `fetch` API in JavaScript?",
-      "answer": "The `fetch` API is used to make HTTP requests and handle responses. Example:\n```javascript\nfetch('https://api.example.com/data')\n  .then(response => response.json())\n  .then(data => console.log(data));\n```"
+      "answer": "The `fetch` API is used to make HTTP requests and handle responses. Example:\n```fetch('https://api.example.com/data')\n  .then(response => response.json())\n  .then(data => console.log(data));\n```"
     },
     {
       "id": 52,
@@ -776,7 +776,7 @@
     {
       "id": 54,
       "question": "How do you handle errors in JavaScript?",
-      "answer": "Use `try...catch` blocks:\n```javascript\ntry {\n  // code that may throw an error\n} catch (error) {\n  console.error(error);\n}\n```"
+      "answer": "Use `try...catch` blocks:\n```try {\n  // code that may throw an error\n} catch (error) {\n  console.error(error);\n}\n```"
     },
     {
       "id": 55,
@@ -821,7 +821,7 @@
     {
       "id": 63,
       "question": "What are tagged template literals?",
-      "answer": "Tagged template literals allow you to parse template literals with a custom function.\n```javascript\nfunction tag(strings, ...values) {\n  return strings.raw[0];\n}\ntag`Hello \\n World!`;\n```"
+      "answer": "Tagged template literals allow you to parse template literals with a custom function.\n```function tag(strings, ...values) {\n  return strings.raw[0];\n}\ntag`Hello \\n World!`;\n```"
     },
     {
       "id": 64,
@@ -891,7 +891,7 @@
     {
       "id": 77,
       "question": "What is an Immediately Invoked Function Expression (IIFE)?",
-      "answer": "An IIFE is a function that is executed immediately after its definition:\n```javascript\n(function() {\n  console.log(\"IIFE executed!\");\n})();\n```"
+      "answer": "An IIFE is a function that is executed immediately after its definition:\n```(function() {\n  console.log(\"IIFE executed!\");\n})();\n```"
     },
     {
       "id": 78,
@@ -1048,12 +1048,12 @@
     {
       "id": 8,
       "question": "What is the use of `useState` in React?",
-      "answer": "`useState` is a Hook that allows you to add state to functional components.\n```javascript\nconst [count, setCount] = useState(0);\n```"
+      "answer": "`useState` is a Hook that allows you to add state to functional components.\n```const [count, setCount] = useState(0);\n```"
     },
     {
       "id": 9,
       "question": "What is `useEffect` in React?",
-      "answer": "`useEffect` is a Hook that performs side effects like fetching data or subscribing to events.\n```javascript\nuseEffect(() => {\n  console.log('Component mounted');\n}, []);\n```"
+      "answer": "`useEffect` is a Hook that performs side effects like fetching data or subscribing to events.\n```useEffect(() => {\n  console.log('Component mounted');\n}, []);\n```"
     },
     {
       "id": 10,
@@ -1068,7 +1068,7 @@
     {
       "id": 12,
       "question": "What is `PropTypes` in React?",
-      "answer": "`PropTypes` is used for runtime type checking of props in a React component.\n```javascript\nMyComponent.propTypes = {\n  name: PropTypes.string,\n};\n```"
+      "answer": "`PropTypes` is used for runtime type checking of props in a React component.\n```MyComponent.propTypes = {\n  name: PropTypes.string,\n};\n```"
     },
     {
       "id": 13,
@@ -1078,12 +1078,12 @@
     {
       "id": 14,
       "question": "What is the Context API in React?",
-      "answer": "The Context API is used to pass data through the component tree without manually passing props down every level.\n```javascript\nconst MyContext = React.createContext();\n```"
+      "answer": "The Context API is used to pass data through the component tree without manually passing props down every level.\n```const MyContext = React.createContext();\n```"
     },
     {
       "id": 15,
       "question": "What is `useContext` in React?",
-      "answer": "`useContext` is a Hook that allows you to consume context values in functional components.\n```javascript\nconst value = useContext(MyContext);\n```"
+      "answer": "`useContext` is a Hook that allows you to consume context values in functional components.\n```const value = useContext(MyContext);\n```"
     },
     {
       "id": 16,
@@ -1123,7 +1123,7 @@
     {
       "id": 23,
       "question": "What is `useReducer` in React?",
-      "answer": "`useReducer` is a Hook that manages state using a reducer function.\n```javascript\nconst [state, dispatch] = useReducer(reducer, initialState);\n```"
+      "answer": "`useReducer` is a Hook that manages state using a reducer function.\n```const [state, dispatch] = useReducer(reducer, initialState);\n```"
     },
     {
       "id": 24,
@@ -1288,7 +1288,7 @@
     {
       "id": 56,
       "question": "How do you pass a function as a prop in React?",
-      "answer": "Functions can be passed as props like any other value:\n```javascript\n<MyComponent handleClick={() => console.log('Clicked!')} />\n```"
+      "answer": "Functions can be passed as props like any other value:\n```<MyComponent handleClick={() => console.log('Clicked!')} />\n```"
     },
     {
       "id": 57,
@@ -1303,7 +1303,7 @@
     {
       "id": 59,
       "question": "How do you update state based on previous state in React?",
-      "answer": "Use the functional form of `setState`:\n```javascript\nsetState(prevState => ({ count: prevState.count + 1 }));\n```"
+      "answer": "Use the functional form of `setState`:\n```setState(prevState => ({ count: prevState.count + 1 }));\n```"
     },
     {
       "id": 60,
@@ -1413,17 +1413,17 @@
     {
       "id": 81,
       "question": "How do you memoize values in React?",
-      "answer": "Use the `useMemo` Hook to memoize expensive calculations.\n```javascript\nconst memoizedValue = useMemo(() => computeValue(a, b), [a, b]);\n```"
+      "answer": "Use the `useMemo` Hook to memoize expensive calculations.\n```const memoizedValue = useMemo(() => computeValue(a, b), [a, b]);\n```"
     },
     {
       "id": 82,
       "question": "What is the `useCallback` Hook in React?",
-      "answer": "`useCallback` is used to memoize functions, preventing them from being re-created on every render.\n```javascript\nconst memoizedCallback = useCallback(() => doSomething(a, b), [a, b]);\n```"
+      "answer": "`useCallback` is used to memoize functions, preventing them from being re-created on every render.\n```const memoizedCallback = useCallback(() => doSomething(a, b), [a, b]);\n```"
     },
     {
       "id": 83,
       "question": "How do you handle conditional rendering in React?",
-      "answer": "Use JavaScript conditions like `if`, ternary operators, or logical `&&` inside JSX.\n```javascript\n{isLoggedIn ? <Dashboard /> : <Login />}\n```"
+      "answer": "Use JavaScript conditions like `if`, ternary operators, or logical `&&` inside JSX.\n```{isLoggedIn ? <Dashboard /> : <Login />}\n```"
     },
     {
       "id": 84,
@@ -1438,7 +1438,7 @@
     {
       "id": 86,
       "question": "How do you achieve routing in React?",
-      "answer": "Use React Router to define routes and manage navigation.\n```javascript\n<BrowserRouter>\n  <Route path=\"/home\" component={Home} />\n</BrowserRouter>\n```"
+      "answer": "Use React Router to define routes and manage navigation.\n```<BrowserRouter>\n  <Route path=\"/home\" component={Home} />\n</BrowserRouter>\n```"
     },
     {
       "id": 87,
@@ -1448,7 +1448,7 @@
     {
       "id": 88,
       "question": "What are portals in React?",
-      "answer": "Portals allow rendering children into a DOM node outside the parent hierarchy.\n```javascript\nReactDOM.createPortal(child, container);\n```"
+      "answer": "Portals allow rendering children into a DOM node outside the parent hierarchy.\n```ReactDOM.createPortal(child, container);\n```"
     },
     {
       "id": 89,
@@ -1468,12 +1468,12 @@
     {
       "id": 92,
       "question": "How do you fetch data in React?",
-      "answer": "Use `useEffect` for side effects and libraries like Axios or Fetch API to make HTTP requests.\n```javascript\nuseEffect(() => {\n  fetchData();\n}, []);\n```"
+      "answer": "Use `useEffect` for side effects and libraries like Axios or Fetch API to make HTTP requests.\n```useEffect(() => {\n  fetchData();\n}, []);\n```"
     },
     {
       "id": 93,
       "question": "What is a custom Hook in React?",
-      "answer": "Custom Hooks are reusable functions that encapsulate stateful logic and can be shared across components.\n```javascript\nfunction useCustomHook() {\n  const [value, setValue] = useState(0);\n  return [value, setValue];\n}\n```"
+      "answer": "Custom Hooks are reusable functions that encapsulate stateful logic and can be shared across components.\n```function useCustomHook() {\n  const [value, setValue] = useState(0);\n  return [value, setValue];\n}\n```"
     },
     {
       "id": 94,
@@ -1493,7 +1493,7 @@
     {
       "id": 97,
       "question": "What is the `useReducer` Hook?",
-      "answer": "It manages complex state logic by using a reducer function.\n```javascript\nconst [state, dispatch] = useReducer(reducer, initialState);\n```"
+      "answer": "It manages complex state logic by using a reducer function.\n```const [state, dispatch] = useReducer(reducer, initialState);\n```"
     },
     {
       "id": 98,
@@ -1525,7 +1525,7 @@
     {
       "id": 3,
       "question": "How do you install TypeScript?",
-      "answer": "Use the npm command:\n```bash\nnpm install -g typescript\n```"
+      "answer": "Use the npm command:\n```npm install -g typescript\n```"
     },
     {
       "id": 4,
@@ -1540,7 +1540,7 @@
     {
       "id": 6,
       "question": "What are interfaces in TypeScript?",
-      "answer": "Interfaces define the structure of an object, ensuring that it adheres to a specific contract.\n```typescript\ninterface User {\n  name: string;\n  age: number;\n}\n```"
+      "answer": "Interfaces define the structure of an object, ensuring that it adheres to a specific contract.\n```interface User {\n  name: string;\n  age: number;\n}\n```"
     },
     {
       "id": 7,
@@ -1550,27 +1550,27 @@
     {
       "id": 8,
       "question": "What are union types in TypeScript?",
-      "answer": "Union types allow a variable to hold multiple types:\n```typescript\nlet value: string | number;\n```"
+      "answer": "Union types allow a variable to hold multiple types:\n```let value: string | number;\n```"
     },
     {
       "id": 9,
       "question": "What are intersection types in TypeScript?",
-      "answer": "Intersection types combine multiple types into one:\n```typescript\ntype Admin = User & { permissions: string[] };\n```"
+      "answer": "Intersection types combine multiple types into one:\n```type Admin = User & { permissions: string[] };\n```"
     },
     {
       "id": 10,
       "question": "What are generics in TypeScript?",
-      "answer": "Generics allow components or functions to operate on a variety of types while ensuring type safety:\n```typescript\nfunction identity<T>(arg: T): T {\n  return arg;\n}\n```"
+      "answer": "Generics allow components or functions to operate on a variety of types while ensuring type safety:\n```function identity<T>(arg: T): T {\n  return arg;\n}\n```"
     },
     {
       "id": 11,
       "question": "What is the `readonly` modifier in TypeScript?",
-      "answer": "It prevents properties from being reassigned:\n```typescript\nreadonly name: string;\n```"
+      "answer": "It prevents properties from being reassigned:\n```readonly name: string;\n```"
     },
     {
       "id": 12,
       "question": "What are enums in TypeScript?",
-      "answer": "Enums define a set of named constants:\n```typescript\nenum Direction {\n  Up,\n  Down,\n  Left,\n  Right\n}\n```"
+      "answer": "Enums define a set of named constants:\n```enum Direction {\n  Up,\n  Down,\n  Left,\n  Right\n}\n```"
     },
     {
       "id": 13,
@@ -1585,7 +1585,7 @@
     {
       "id": 15,
       "question": "What are modules in TypeScript?",
-      "answer": "Modules allow you to organize code into separate files and reuse code using `export` and `import`.\n```typescript\nexport const value = 42;\nimport { value } from './module';\n```"
+      "answer": "Modules allow you to organize code into separate files and reuse code using `export` and `import`.\n```export const value = 42;\nimport { value } from './module';\n```"
     },
     {
       "id": 16,
@@ -1600,7 +1600,7 @@
     {
       "id": 18,
       "question": "How do you define a tuple in TypeScript?",
-      "answer": "Tuples allow you to define an array with fixed types and lengths:\n```typescript\nlet tuple: [string, number];\n```"
+      "answer": "Tuples allow you to define an array with fixed types and lengths:\n```let tuple: [string, number];\n```"
     },
     {
       "id": 19,
@@ -1610,12 +1610,12 @@
     {
       "id": 20,
       "question": "How do you handle optional properties in TypeScript?",
-      "answer": "Use the `?` syntax to define optional properties:\n```typescript\ninterface User {\n  name: string;\n  age?: number;\n}\n```"
+      "answer": "Use the `?` syntax to define optional properties:\n```interface User {\n  name: string;\n  age?: number;\n}\n```"
     },
     {
       "id": 21,
       "question": "What are decorators in TypeScript?",
-      "answer": "Decorators are special functions used to modify classes, methods, or properties.\n```typescript\nfunction MyDecorator(target: any) {\n  // Modify target\n}\n```"
+      "answer": "Decorators are special functions used to modify classes, methods, or properties.\n```function MyDecorator(target: any) {\n  // Modify target\n}\n```"
     },
     {
       "id": 22,
@@ -1625,17 +1625,17 @@
     {
       "id": 23,
       "question": "How do you create a type alias in TypeScript?",
-      "answer": "Use the `type` keyword:\n```typescript\ntype ID = string | number;\n```"
+      "answer": "Use the `type` keyword:\n```type ID = string | number;\n```"
     },
     {
       "id": 24,
       "question": "What is a mapped type in TypeScript?",
-      "answer": "Mapped types allow you to create new types based on existing ones:\n```typescript\ntype Readonly<T> = { readonly [P in keyof T]: T[P] };\n```"
+      "answer": "Mapped types allow you to create new types based on existing ones:\n```type Readonly<T> = { readonly [P in keyof T]: T[P] };\n```"
     },
     {
       "id": 25,
       "question": "What is type assertion in TypeScript?",
-      "answer": "Type assertion tells the compiler to treat a value as a specific type:\n```typescript\nlet value: any = \"hello\";\nlet strLength: number = (value as string).length;\n```"
+      "answer": "Type assertion tells the compiler to treat a value as a specific type:\n```let value: any = \"hello\";\nlet strLength: number = (value as string).length;\n```"
     },
     {
       "id": 26,
@@ -1645,17 +1645,17 @@
     {
       "id": 27,
       "question": "How does TypeScript handle function overloading?",
-      "answer": "TypeScript allows you to define multiple signatures for a function, and the implementation must match one of the signatures:\n```typescript\nfunction add(a: number, b: number): number;\nfunction add(a: string, b: string): string;\nfunction add(a: any, b: any): any {\n  return a + b;\n}\n```"
+      "answer": "TypeScript allows you to define multiple signatures for a function, and the implementation must match one of the signatures:\n```function add(a: number, b: number): number;\nfunction add(a: string, b: string): string;\nfunction add(a: any, b: any): any {\n  return a + b;\n}\n```"
     },
     {
       "id": 28,
       "question": "What is type narrowing in TypeScript?",
-      "answer": "Type narrowing reduces a broad type to a more specific one using type guards, such as `typeof` or `instanceof`:\n```typescript\nfunction print(value: string | number) {\n  if (typeof value === \"string\") {\n    console.log(value.toUpperCase());\n  }\n}\n```"
+      "answer": "Type narrowing reduces a broad type to a more specific one using type guards, such as `typeof` or `instanceof`:\n```function print(value: string | number) {\n  if (typeof value === \"string\") {\n    console.log(value.toUpperCase());\n  }\n}\n```"
     },
     {
       "id": 29,
       "question": "What is `keyof` in TypeScript?",
-      "answer": "`keyof` creates a union of the keys of a given type:\n```typescript\ntype UserKeys = keyof User; // \"name\" | \"age\"\n```"
+      "answer": "`keyof` creates a union of the keys of a given type:\n```type UserKeys = keyof User; // \"name\" | \"age\"\n```"
     },
     {
       "id": 30,
@@ -1665,77 +1665,77 @@
     {
       "id": 31,
       "question": "How do you extend an interface in TypeScript?",
-      "answer": "Use the `extends` keyword:\n```typescript\ninterface Animal {\n  name: string;\n}\ninterface Dog extends Animal {\n  breed: string;\n}\n```"
+      "answer": "Use the `extends` keyword:\n```interface Animal {\n  name: string;\n}\ninterface Dog extends Animal {\n  breed: string;\n}\n```"
     },
     {
       "id": 32,
       "question": "What is `type` vs. `interface` for functions in TypeScript?",
-      "answer": "Both can define function types, but `type` provides more flexibility for complex scenarios:\n```typescript\ntype Add = (a: number, b: number) => number;\ninterface Add {\n  (a: number, b: number): number;\n}\n```"
+      "answer": "Both can define function types, but `type` provides more flexibility for complex scenarios:\n```type Add = (a: number, b: number) => number;\ninterface Add {\n  (a: number, b: number): number;\n}\n```"
     },
     {
       "id": 33,
       "question": "What are conditional types in TypeScript?",
-      "answer": "Conditional types provide type-level logic using `extends`:\n```typescript\ntype IsString<T> = T extends string ? true : false;\n```"
+      "answer": "Conditional types provide type-level logic using `extends`:\n```type IsString<T> = T extends string ? true : false;\n```"
     },
     {
       "id": 34,
       "question": "What is `Exclude` in TypeScript?",
-      "answer": "`Exclude` removes types from a union:\n```typescript\ntype Excluded = Exclude<\"a\" | \"b\" | \"c\", \"a\">; // \"b\" | \"c\"\n```"
+      "answer": "`Exclude` removes types from a union:\n```type Excluded = Exclude<\"a\" | \"b\" | \"c\", \"a\">; // \"b\" | \"c\"\n```"
     },
     {
       "id": 35,
       "question": "How do you handle default parameters in TypeScript functions?",
-      "answer": "Define default values directly in the function signature:\n```typescript\nfunction greet(name: string = \"Guest\") {\n  console.log(`Hello, ${name}!`);\n}\n```"
+      "answer": "Define default values directly in the function signature:\n```function greet(name: string = \"Guest\") {\n  console.log(`Hello, ${name}!`);\n}\n```"
     },
     {
       "id": 36,
       "question": "What is `Omit` in TypeScript?",
-      "answer": "`Omit` removes specific keys from a type:\n```typescript\ntype WithoutAge = Omit<User, \"age\">;\n```"
+      "answer": "`Omit` removes specific keys from a type:\n```type WithoutAge = Omit<User, \"age\">;\n```"
     },
     {
       "id": 37,
       "question": "How do you declare a module in TypeScript?",
-      "answer": "Use the `declare module` syntax to extend existing modules or define new ones:\n```typescript\ndeclare module \"my-library\" {\n  export function doSomething(): void;\n}\n```"
+      "answer": "Use the `declare module` syntax to extend existing modules or define new ones:\n```declare module \"my-library\" {\n  export function doSomething(): void;\n}\n```"
     },
     {
       "id": 38,
       "question": "What is the `this` parameter in TypeScript functions?",
-      "answer": "It allows you to define the type of `this` in a function:\n```typescript\nfunction show(this: User) {\n  console.log(this.name);\n}\n```"
+      "answer": "It allows you to define the type of `this` in a function:\n```function show(this: User) {\n  console.log(this.name);\n}\n```"
     },
     {
       "id": 39,
       "question": "What is `Record` in TypeScript?",
-      "answer": "`Record` creates an object type with specified keys and values:\n```typescript\ntype UserRoles = Record<\"admin\" | \"editor\", boolean>;\n```"
+      "answer": "`Record` creates an object type with specified keys and values:\n```type UserRoles = Record<\"admin\" | \"editor\", boolean>;\n```"
     },
     {
       "id": 40,
       "question": "What is module augmentation in TypeScript?",
-      "answer": "Module augmentation allows you to add new members to existing modules:\n```typescript\ndeclare module \"express\" {\n  interface Request {\n    user?: User;\n  }\n}\n```"
+      "answer": "Module augmentation allows you to add new members to existing modules:\n```declare module \"express\" {\n  interface Request {\n    user?: User;\n  }\n}\n```"
     },
     {
       "id": 41,
       "question": "What are `readonly` arrays in TypeScript?",
-      "answer": "Arrays that cannot be modified after creation:\n```typescript\nconst numbers: readonly number[] = [1, 2, 3];\n```"
+      "answer": "Arrays that cannot be modified after creation:\n```const numbers: readonly number[] = [1, 2, 3];\n```"
     },
     {
       "id": 42,
       "question": "What is `ReturnType` in TypeScript?",
-      "answer": "It extracts the return type of a function:\n```typescript\ntype Result = ReturnType<() => string>; // string\n```"
+      "answer": "It extracts the return type of a function:\n```type Result = ReturnType<() => string>; // string\n```"
     },
     {
       "id": 43,
       "question": "How do you overload constructors in TypeScript?",
-      "answer": "Define multiple constructor signatures:\n```typescript\nclass Point {\n  constructor(x: number, y: number);\n  constructor(xy: [number, number]);\n  constructor(x: any, y?: any) {\n    // Implementation\n  }\n}\n```"
+      "answer": "Define multiple constructor signatures:\n```class Point {\n  constructor(x: number, y: number);\n  constructor(xy: [number, number]);\n  constructor(x: any, y?: any) {\n    // Implementation\n  }\n}\n```"
     },
     {
       "id": 44,
       "question": "What are `template literal types` in TypeScript?",
-      "answer": "They create new string types by combining literals:\n```typescript\ntype Greeting = `Hello, ${string}`;\n```"
+      "answer": "They create new string types by combining literals:\n```type Greeting = `Hello, ${string}`;\n```"
     },
     {
       "id": 45,
       "question": "How do you use assertions in TypeScript?",
-      "answer": "Use the `as` keyword to override inferred types:\n```typescript\nconst value: any = \"Hello\";\nconst length: number = (value as string).length;\n```"
+      "answer": "Use the `as` keyword to override inferred types:\n```const value: any = \"Hello\";\nconst length: number = (value as string).length;\n```"
     },
     {
       "id": 46,
@@ -1745,22 +1745,22 @@
     {
       "id": 47,
       "question": "What are `type guards` in TypeScript?",
-      "answer": "Type guards are functions or expressions that narrow down types:\n```typescript\nfunction isString(value: any): value is string {\n  return typeof value === \"string\";\n}\n```"
+      "answer": "Type guards are functions or expressions that narrow down types:\n```function isString(value: any): value is string {\n  return typeof value === \"string\";\n}\n```"
     },
     {
       "id": 48,
       "question": "What are hybrid types in TypeScript?",
-      "answer": "Hybrid types combine properties and methods:\n```typescript\ninterface Counter {\n  (start: number): string;\n  reset(): void;\n}\n```"
+      "answer": "Hybrid types combine properties and methods:\n```interface Counter {\n  (start: number): string;\n  reset(): void;\n}\n```"
     },
     {
       "id": 49,
       "question": "What is the `namespace` keyword in TypeScript?",
-      "answer": "Namespaces are used to organize code and prevent name collisions:\n```typescript\nnamespace Utils {\n  export function log(message: string) {\n    console.log(message);\n  }\n}\n```"
+      "answer": "Namespaces are used to organize code and prevent name collisions:\n```namespace Utils {\n  export function log(message: string) {\n    console.log(message);\n  }\n}\n```"
     },
     {
       "id": 50,
       "question": "What is `Partial` in TypeScript?",
-      "answer": "`Partial` makes all properties of a type optional:\n```typescript\ntype PartialUser = Partial<User>;\n```"
+      "answer": "`Partial` makes all properties of a type optional:\n```type PartialUser = Partial<User>;\n```"
     }
   ]
 }
